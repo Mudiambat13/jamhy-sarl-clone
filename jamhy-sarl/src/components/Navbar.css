@@ -1,15 +1,81 @@
+/* Style de base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
 .nav-list li a {
   text-decoration: none;
-  color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
 }
 
+.nav-list li a:hover,
 .nav-list li a.active-link {
-  font-weight: bold;
-  color: #007bff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+/* Styles pour petits écrans */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .nav-list li {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
