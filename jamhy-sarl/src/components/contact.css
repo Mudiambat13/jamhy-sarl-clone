@@ -1,0 +1,72 @@
+.quote-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quote-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.quote-form label {
+  font-weight: bold;
+  color: #555;
+}
+
+.quote-form input,
+.quote-form textarea,
+.quote-form select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quote-form input:focus,
+.quote-form textarea:focus,
+.quote-form select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.quote-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.form-success {
+  text-align: center;
+  color: #333;
+}
+
+.form-success h2 {
+  color: #007bff;
+}
